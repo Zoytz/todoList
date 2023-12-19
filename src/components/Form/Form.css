@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  max-width: 600px;
+  width: 100%;
+  gap: 10px;
+}
+
+.form__input {
+  flex: 1 1 auto;
+  border: none;
+  border-bottom: 2px solid #000;
+  min-height: 30px;
+  outline: none;
+  font-size: 20px;
+}
+
+.form__input:focus {
+  border-bottom: 2px solid gold;
+}
+
+.form__button {
+  background-color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.form__button_type_create {
+  background-image: url(../../images/plus.svg);
+}
+
+.form__button_type_search {
+  background-image: url(../../images/search.svg);
+}
+
+.form__select {
+  font-size: 20px;
+  width: 50%;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  margin: 0 auto;
+  text-align: center;
+}
