@@ -38,7 +38,7 @@ const Form: FC<PropsType> = ({ type, handleSetSearchQuery, handleSetFilter, acti
 
   const handleSearchQuerySubmit = (e: FormEvent) => {
     e.preventDefault()
-    if (inputValue && handleSetSearchQuery) handleSetSearchQuery(inputValue)
+    if (handleSetSearchQuery) handleSetSearchQuery(inputValue || '')
   }
 
   const handleFormSubmit = type == 'create' ? handleCreateTodo : handleSearchQuerySubmit
